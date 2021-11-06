@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+    margin: 15%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.frog {
+    background-image: url(./images/frog.jpg);
+    height: 100vh;
+}
