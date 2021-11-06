@@ -41,21 +41,23 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
 }
 
 .spacer {
-    height: 10vh;
-    background-color: black;
+    height: 4px;
+    background-color: white;
 }
 
 .frog {
     background-image: url(./images/frog.jpg);
+    height: 100vh;
 }
 .snake {
     background-image: url(./images/snake.jpg);
+    height: 100vh;
 }
-
 .turtle {
     background-image: url(./images/turtle.jpg);
+    background-position: top;
+    height: 80vh;
 }
