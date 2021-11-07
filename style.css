@@ -5,6 +5,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 article {
@@ -23,13 +24,13 @@ p {
     font-size: 18px;
 }
 
-.right {
+.right.parallax {
     display: flex;
     align-items: center;
     justify-content: right;
 }
 
-.left {
+.left.parallax {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -37,15 +38,25 @@ p {
 
 .parallax {
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
 }
 
 .spacer {
-    height: 4px;
+    position: relative;
+    height: 16px;
     background-color: white;
+    border-radius: 8px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    width: 45%;
+}
+
+.spacer.flipped {
+    margin-left: auto;
 }
 
 .frog {
@@ -54,7 +65,7 @@ p {
 }
 .snake {
     background-image: url(./images/snake.jpg);
-    height: 100vh;
+    height: 90vh;
 }
 .turtle {
     background-image: url(./images/turtle.jpg);
